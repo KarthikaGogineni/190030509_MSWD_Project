@@ -1,0 +1,35 @@
+<simple-notifications [options]="options"></simple-notifications>
+
+<div class="jumbotron text-center">
+
+  <h1>Weather App</h1>
+  <p class="lead tagline">Accurate weather reporting from around the globe</p>
+
+  <app-search></app-search>
+  
+  <div class="main-cta">
+    <div *ngIf="!authService.loggedIn()">
+      <a class="btn btn-primary" [routerLink]="['/register']">Register</a> <a class="btn btn-light" [routerLink]="['/login']">Login</a>
+    </div>
+    <div *ngIf="authService.loggedIn()">
+      <a class="btn btn-primary" [routerLink]="['/dashboard']">Dashboard</a> <a class="btn btn-light" [routerLink]="['/search']">Search weather</a>
+    </div>
+  </div>
+
+</div>
+  
+<div class="row">
+  <div class="col-md-4">
+    <h3>Real-time weather reports</h3>
+    <p>Get the latest weather reports from anywhere around the globe.</p>
+  </div>
+  <div class="col-md-4">
+    <h3>Customizable dashboard</h3>
+    <p>View the weather from your favorite locations in your own personalized dashboard.</p>
+  </div>
+  <div class="col-md-4">
+    <h3>Secure login</h3>
+    <p>Our app features secure authentication and password encryption so your data is always safe.</p>
+  </div>
+</div>
+
