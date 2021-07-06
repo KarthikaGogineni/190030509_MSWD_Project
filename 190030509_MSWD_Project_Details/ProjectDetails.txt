@@ -1,1 +1,13 @@
+Team lead id number : 190030509
 
+Team lead name : KARTHIKA GOGINENI
+
+Team Member id number : 190031107
+
+Team Member name : MUNNANGI DHANASREE
+
+Project ID : 1
+
+Project Title : WEATHER APP
+
+Completion Percentage : 90
